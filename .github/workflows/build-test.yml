@@ -1,12 +1,7 @@
 name: Build Test
 
 on:
-  push:
-    # Don't run for tags
-    tags-ignore:
-      - 'v**'
-    branches:
-      - '**'
+  workflow_dispatch:
 
 jobs:
   # Make sure every tool still builds on all three desktop platforms.

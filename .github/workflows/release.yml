@@ -2,8 +2,7 @@ name: Release
 run-name: "Release ${{ github.ref_name }}"
 
 on:
-  release:
-    types: [ released ]
+  workflow_dispatch:
 
 env:
   # Every binary that goes into a release archive.
